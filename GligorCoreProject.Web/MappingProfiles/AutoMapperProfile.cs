@@ -11,6 +11,7 @@ namespace GligorCoreProject.Web.MappingProfiles
             CreateMap<LeaveType, LeaveTypeReadOnlyVM>();
                // .ForMember(dest => dest.NumberOfDays, opt => opt.MapFrom(src => src.NumberOfDays));
             CreateMap<LeaveTypeCreateVM, LeaveType>();
+            CreateMap<LeaveTypeEditVM, LeaveType>().ReverseMap();
         }
     }
 }
